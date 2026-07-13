@@ -1,4 +1,4 @@
-# HashFame
+# CreatorZone
 
 HashFame is a free-tier creator discovery build for Indian influencer workflows. The current app keeps the existing Supabase-backed Next.js discovery UI, and adds the backend, ingestion, and local search/vector infrastructure expected by the HashFame architecture.
 
