@@ -1,0 +1,43 @@
+{
+  "name": "hashfame-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node -e \"require('fs').mkdirSync('.next/static/development',{recursive:true})\" && next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "supabase:types": "node scripts/generate-supabase-types.mjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.50.3",
+    "@tanstack/react-query": "^5.81.5",
+    "@tanstack/react-table": "^8.21.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.19.2",
+    "lucide-react": "^0.468.0",
+    "next": "^15.5.7",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.2",
+    "react-dom": "^19.1.2",
+    "react-hook-form": "^7.60.0",
+    "tailwind-merge": "^2.6.0",
+    "zod": "^3.25.67",
+    "zustand": "^5.0.6"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.30.1",
+    "eslint-config-next": "^15.5.7",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.8.3"
+  }
+}

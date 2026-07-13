@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-cream: var(--cream);
+  --color-blush: var(--blush);
+  --color-rose-quartz: var(--rose-quartz);
+  --color-lavender: var(--lavender);
+  --color-champagne: var(--champagne);
+  --color-ink-soft: var(--ink-soft);
+
+  --radius-xs: calc(var(--radius) * 0.5);
+  --radius-sm: calc(var(--radius) * 0.75);
+  --radius-md: calc(var(--radius) * 0.875);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.5);
+  --radius-2xl: calc(var(--radius) * 2);
+}
+
+:root {
+  color-scheme: light;
+  --background: oklch(0.988 0.006 54);
+  --foreground: oklch(0.246 0.018 345);
+  --card: oklch(1 0 0 / 0.82);
+  --card-foreground: oklch(0.246 0.018 345);
+  --popover: oklch(1 0 0 / 0.94);
+  --popover-foreground: oklch(0.246 0.018 345);
+  --primary: oklch(0.627 0.145 354);
+  --primary-foreground: oklch(0.985 0.005 35);
+  --secondary: oklch(0.939 0.031 343);
+  --secondary-foreground: oklch(0.318 0.028 345);
+  --muted: oklch(0.944 0.018 62);
+  --muted-foreground: oklch(0.552 0.03 340);
+  --accent: oklch(0.906 0.043 310);
+  --accent-foreground: oklch(0.329 0.034 315);
+  --destructive: oklch(0.585 0.19 27);
+  --destructive-foreground: oklch(0.985 0.005 35);
+  --border: oklch(0.891 0.025 343);
+  --input: oklch(0.911 0.026 343);
+  --ring: oklch(0.682 0.121 344);
+  --radius: 0.75rem;
+
+  --cream: oklch(0.965 0.025 75);
+  --blush: oklch(0.929 0.047 354);
+  --rose-quartz: oklch(0.793 0.088 357);
+  --lavender: oklch(0.889 0.052 308);
+  --champagne: oklch(0.922 0.045 77);
+  --ink-soft: oklch(0.386 0.025 338);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: oklch(0.184 0.019 332);
+  --foreground: oklch(0.962 0.01 55);
+  --card: oklch(0.236 0.021 331 / 0.84);
+  --card-foreground: oklch(0.962 0.01 55);
+  --popover: oklch(0.236 0.021 331 / 0.96);
+  --popover-foreground: oklch(0.962 0.01 55);
+  --primary: oklch(0.746 0.113 354);
+  --primary-foreground: oklch(0.192 0.017 331);
+  --secondary: oklch(0.306 0.028 326);
+  --secondary-foreground: oklch(0.95 0.012 58);
+  --muted: oklch(0.289 0.022 332);
+  --muted-foreground: oklch(0.744 0.038 336);
+  --accent: oklch(0.338 0.043 310);
+  --accent-foreground: oklch(0.95 0.012 58);
+  --destructive: oklch(0.704 0.191 25);
+  --destructive-foreground: oklch(0.985 0.005 35);
+  --border: oklch(0.382 0.029 330);
+  --input: oklch(0.382 0.029 330);
+  --ring: oklch(0.728 0.101 351);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, color-mix(in oklch, var(--blush) 34%, transparent), transparent 34rem),
+    linear-gradient(135deg, var(--background), color-mix(in oklch, var(--cream) 56%, var(--background)));
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+
+::selection {
+  background: color-mix(in oklch, var(--primary) 24%, transparent);
+}
+
+.cz-glass {
+  background: color-mix(in oklch, var(--card) 88%, transparent);
+  border: 1px solid color-mix(in oklch, var(--border) 72%, transparent);
+  box-shadow: 0 20px 60px color-mix(in oklch, var(--foreground) 8%, transparent);
+  backdrop-filter: blur(18px);
+}
