@@ -1,9 +1,9 @@
 {
-  "name": "hashfame-frontend",
+  "name": "creatorzone",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node -e \"require('fs').mkdirSync('.next/static/development',{recursive:true})\" && next dev --turbopack",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",

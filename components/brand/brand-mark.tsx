@@ -39,7 +39,7 @@ export function BrandMark() {
           </linearGradient>
         </defs>
       </svg>
-      <span className="text-lg font-semibold tracking-normal text-foreground">HashFame</span>
+      <span className="text-lg font-semibold tracking-normal text-foreground">CreatorZone</span>
     </Link>
   );
 }

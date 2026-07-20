@@ -9,7 +9,7 @@ export default function NotFound() {
         <p className="text-sm font-medium text-primary">404</p>
         <h1 className="mt-3 text-2xl font-semibold text-foreground">Page not found</h1>
         <p className="mt-3 text-sm leading-6 text-muted-foreground">
-          This route is not part of the HashFame workspace yet.
+          This route is not part of the Creatorzone workspace yet.
         </p>
         <Link
           href={APP_ROUTES.home}

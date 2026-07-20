@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border/70">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
-        <p>HashFame connects brand teams with indexed Indian creator intelligence.</p>
+        <p>CreatorZone connects brand teams with indexed Indian creator intelligence.</p>
         <div className="flex flex-wrap gap-4">
           <Link href={APP_ROUTES.search} className="hover:text-foreground">
             Search

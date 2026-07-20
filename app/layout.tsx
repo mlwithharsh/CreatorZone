@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "HashFame",
-    template: "%s | HashFame"
+    default: "CreatorZone",
+    template: "%s | CreatorZone"
   },
   description: "Free-tier creator discovery and Notion-to-search pipeline for Indian creators."
 };

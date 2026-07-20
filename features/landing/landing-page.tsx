@@ -31,7 +31,7 @@ export function LandingPage() {
             Free-tier creator intelligence
           </Badge>
           <h1 className="text-5xl font-semibold tracking-normal text-foreground sm:text-7xl">
-            HashFame
+            CreatorZone
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
             Discover Indian creators from Notion-synced profile data, indexed Postgres metrics,

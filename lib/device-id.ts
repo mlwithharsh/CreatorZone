@@ -1,4 +1,4 @@
-const DEVICE_ID_KEY = "hashfame_device_id";
+const DEVICE_ID_KEY = "creatorzone_device_id";
 
 export function getDeviceId() {
   if (typeof window === "undefined") {

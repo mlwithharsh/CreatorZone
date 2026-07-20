@@ -54,7 +54,7 @@ export function SettingsPage() {
             <Button
               variant="destructive"
               onClick={() => {
-                window.localStorage.removeItem("hashfame_device_id");
+                window.localStorage.removeItem("creatorzone_device_id");
                 window.location.reload();
               }}
             >

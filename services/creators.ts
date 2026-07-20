@@ -75,7 +75,7 @@ export async function getCreatorProfile(username: string): Promise<CreatorProfil
   const { data, error } = await supabase
     .from("creators")
     .select(
-      "id,name,username,bio,gender,verified,location_country,location_state,location_city,followers,following,avg_views,avg_likes,engagement_rate,categories,platforms,profile_image_url,cover_image_url,instagram_url,youtube_url,whatsapp_number,email,pricing_min,pricing_max,languages,audience_gender_split,audience_age_ranges,audience_top_countries,created_at,updated_at,recent_posts(id,creator_id,platform,thumbnail_url,caption,likes,comments,posted_at,created_at)"
+      "id,name,username,bio,gender,verified,location_country,location_state,location_city,followers,following,avg_views,avg_likes,engagement_rate,categories,platforms,profile_image_url,cover_image_url,instagram_url,youtube_url,whatsapp_numbers,email,pricing_min,pricing_max,languages,audience_gender_split,audience_age_ranges,audience_top_countries,created_at,updated_at,recent_posts(id,creator_id,platform,thumbnail_url,caption,likes,comments,posted_at,created_at)"
     )
     .eq("username", username)
     .limit(1)

@@ -31,7 +31,7 @@ export type Database = {
           cover_image_url: string | null;
           instagram_url: string | null;
           youtube_url: string | null;
-          whatsapp_number: string | null;
+          whatsapp_numbers: string[];
           email: string | null;
           pricing_min: number | null;
           pricing_max: number | null;
@@ -64,7 +64,7 @@ export type Database = {
           cover_image_url?: string | null;
           instagram_url?: string | null;
           youtube_url?: string | null;
-          whatsapp_number?: string | null;
+          whatsapp_numbers?: string[];
           email?: string | null;
           pricing_min?: number | null;
           pricing_max?: number | null;

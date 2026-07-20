@@ -6,7 +6,12 @@ const requiredClientEnv = [
 const requiredServerEnv = ["SUPABASE_SERVICE_ROLE_KEY"] as const;
 
 function readEnv(name: string) {
-  return process.env[name];
+  // NEXT_PUBLIC_* vars must be accessed with STATIC property syntax so
+  // Next.js / Turbopack inlines them into the client bundle at build time.
+  // Dynamic `process.env[name]` is NEVER replaced in client-side code.
+  if (name === "NEXT_PUBLIC_SUPABASE_URL") return process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (name === "NEXT_PUBLIC_SUPABASE_ANON_KEY") return process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  return process.env[name]; // server-only vars (fine — not sent to browser)
 }
 
 function requireEnv(name: string) {

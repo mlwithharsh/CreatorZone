@@ -129,7 +129,14 @@ export function CreatorProfilePage({ username }: { username: string }) {
             <ContactButton href={creator.instagram_url} label="Instagram" icon={Instagram} />
             <ContactButton href={creator.youtube_url} label="YouTube" icon={Play} />
             <ContactButton href={creator.email ? `mailto:${creator.email}` : undefined} label="Email" icon={Mail} />
-            <ContactButton href={creator.whatsapp_number ? `https://wa.me/${creator.whatsapp_number}` : undefined} label="WhatsApp" icon={MessageCircle} />
+            {creator.whatsapp_numbers?.map((num, i) => (
+              <ContactButton
+                key={num}
+                href={`https://wa.me/${num}`}
+                label={creator.whatsapp_numbers.length > 1 ? `WhatsApp ${i + 1}` : "WhatsApp"}
+                icon={MessageCircle}
+              />
+            ))}
             <Button variant="outline" onClick={() => navigator.clipboard.writeText(window.location.href)}>
               <Share2 className="h-4 w-4" />
               Share

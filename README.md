@@ -1,6 +1,6 @@
 # CreatorZone
 
-HashFame is a free-tier creator discovery build for Indian influencer workflows. The current app keeps the existing Supabase-backed Next.js discovery UI, and adds the backend, ingestion, and local search/vector infrastructure expected by the HashFame architecture.
+CreatorZone is a free-tier creator discovery build for Indian influencer workflows. The current app keeps the existing Supabase-backed Next.js discovery UI, and adds the backend, ingestion, and local search/vector infrastructure expected by the CreatorZone architecture.
 
 ## Stack
 
@@ -87,7 +87,7 @@ python -m pytest backend/tests ingestion/tests
 
 ## Current Scope
 
-Implemented from the HashFame prompt:
+Implemented from the CreatorZone prompt:
 
 - Chunk 0 skeleton: backend, ingestion, infra, CI, README, env contract.
 - Chunk 1 foundation: Alembic SQL migration, Notion sync module, PII handling, mocked tests.

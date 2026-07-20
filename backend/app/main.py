@@ -7,7 +7,7 @@ from backend.app.dependencies import get_supabase, normalize_creator
 from backend.app.search import search_creator_index
 from backend.app.schemas import CreatorDetail, HealthResponse, SearchResponse
 
-app = FastAPI(title="HashFame API", version="0.1.0")
+app = FastAPI(title="CreatorZone API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
