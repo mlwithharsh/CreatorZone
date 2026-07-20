@@ -1,6 +1,7 @@
 # CreatorZone
 
 CreatorZone is a free-tier creator discovery build for Indian influencer workflows. The current app keeps the existing Supabase-backed Next.js discovery UI, and adds the backend, ingestion, and local search/vector infrastructure expected by the CreatorZone architecture.
+<img width="1892" height="935" alt="image" src="https://github.com/user-attachments/assets/512af7c1-5777-46c9-acc1-b370cccbeafe" />
 
 ## Stack
 
@@ -17,6 +18,7 @@ CreatorZone is a free-tier creator discovery build for Indian influencer workflo
 - PII contact data is encrypted or omitted from indexable rows before downstream search work.
 - The frontend never fetches the full creator dataset; list views use service functions and paginated RPC/query calls.
 - Local Docker services are configured for small development machines and are not production infrastructure.
+<img width="1888" height="926" alt="image" src="https://github.com/user-attachments/assets/2a20732c-fb22-4a37-8d3f-83c0eae4c219" />
 
 ## Local Setup
 
@@ -67,6 +69,7 @@ python -m ingestion.sync_notion
 ```
 
 The sync uses Notion `/databases/query`, applies the 3 requests/sec limit, retries 429 responses with backoff, maps Notion property types, and upserts by `notion_page_id`.
+<img width="1886" height="933" alt="image" src="https://github.com/user-attachments/assets/078d86c1-4355-4f3d-b6fe-50317078823e" />
 
 ## Validation
 
